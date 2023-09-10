@@ -615,6 +615,25 @@ a {
     max-width: 500px;
     margin: 0 auto;
 }
+
+/* Feature */
+
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem;
+}
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: repeat(2, 1fr);
@@ -669,6 +688,10 @@ a {
 
     .block-domain__prices {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
     }
 }
 
